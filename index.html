@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Bootstrap styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles/custom.css">
+
+    <!-- Font-awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous" defer></script>
+
+    <!-- App script -->
+    <script type="module" src="scripts/index.js" defer></script>
+
+    <title>Note App JS</title>
+  </head>
+
+  <body>
+    <header class="bg-primary bg-opacity-50 bg-gradient shadow-sm mb-4">
+      <div class="container">
+        <h1 class="font-monospace text-center mb-0">
+          NOTES
+        </h1>
+      </div>
+    </header>
+
+    <section class="p-2">
+      <div class="container">
+
+        <!-- Active Notes Table -->
+        <table class="table tabl__active shadow">
+          <caption align="top" class="text-center text-black">Active Notes</caption>
+          <thead>
+            <tr class="bg-primary bg-opacity-25 text-center">
+              <th>Name</th>
+              <th>Created</th>
+              <th>Category</th>
+              <th>Content</th>
+              <th>Dates</th>
+              <th>
+                <i class="fa fa-archive ms-3"></i>
+                <i class="fa fa-trash ms-3"></i>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+          </tbody>
+        </table>
+
+        <div class="d-flex justify-content-end">
+          <button type="button" class="btn btn-primary">Create Note</button>
+        </div>
+
+
+        <!-- Statistics table -->
+        <table class="table tabl__stat shadow">
+          <caption align="top" class="text-center text-black">Statistics</caption>
+          <thead>
+            <tr class="bg-primary bg-opacity-25 text-center">
+              <th scope="col">Category</th>
+              <th scope="col">Active</th>
+              <th scope="col">Archived</th>
+          </tr>
+          </thead>
+          <tbody class="table-group-divider">
+          </tbody>
+        </table>
+
+        <!-- Archived Notes Table -->
+        <table class="table tabl__archived shadow">
+          <caption align="top" class="text-center text-black">Archived Notes</caption>
+          <thead>
+            <tr class="bg-primary bg-opacity-25 text-center">
+              <th>Name</th>
+              <th>Created</th>
+              <th>Category</th>
+              <th>Content</th>
+              <th>Dates</th>
+              <th>
+                <i class="fa fa-archive ms-3"></i>
+                <i class="fa fa-trash ms-3"></i>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+  </body>
+</html>
