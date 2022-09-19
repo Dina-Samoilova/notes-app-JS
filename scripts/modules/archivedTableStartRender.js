@@ -20,7 +20,7 @@ const archivedTableFillRows = (array) => {
     const createDate = new Date(note.createdAt);
 
     tr.insertAdjacentHTML('beforeend', `
-      <td>${note.title}</td>
+      <td class="fw-bold">${note.title}</td>
       <td>${createDate.toLocaleDateString('en-US', options)}</td>
       <td>${note.category}</td>
       <td>${note.description}</td>
@@ -30,7 +30,7 @@ const archivedTableFillRows = (array) => {
           <button type="button" class="btn btn-light btn__edit">
             <i class="fa fa-pencil"></i>
           </button>
-          <button type="button" class="btn btn-light btn__archived">
+          <button type="button" class="btn btn-light btn__activate">
             <i class="fa fa-archive"></i>
           </button>
           <button type="button" class="btn btn-light btn__delete">

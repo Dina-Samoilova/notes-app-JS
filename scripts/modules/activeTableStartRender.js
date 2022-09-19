@@ -20,7 +20,7 @@ const activeTableFillRows = (array) => {
     const createDate = new Date(note.createdAt);
 
     tr.insertAdjacentHTML('beforeend', `
-      <td>${note.title}</td>
+      <td class="fw-bold">${note.title}</td>
       <td>${createDate.toLocaleDateString('en-US', options)}</td>
       <td>${note.category}</td>
       <td>${note.description}</td>
