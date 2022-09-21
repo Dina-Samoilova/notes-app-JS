@@ -4,6 +4,20 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-table {
+table th {
   font-size: 14px;
+}
+
+table td {
+  font-size: 12px;
+}
+
+#form {
+  height: 100vh;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+}
+
+#form:target {
+  transform: translateX(0);
 }

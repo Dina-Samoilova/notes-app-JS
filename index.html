@@ -49,10 +49,10 @@
           <caption align="top" class="text-center text-black">Active Notes</caption>
           <thead>
             <tr class="bg-primary bg-opacity-25 text-center">
-              <th>Name</th>
+              <th>Title</th>
               <th>Created</th>
               <th>Category</th>
-              <th>Content</th>
+              <th>Description</th>
               <th>Dates</th>
               <th>
                 <i class="fa fa-archive ms-3"></i>
@@ -65,7 +65,13 @@
         </table>
 
         <div class="d-flex justify-content-end">
-          <button type="button" class="btn btn-primary">Create Note</button>
+          <a
+            href="#form"
+            class="btn btn-primary btn__create"
+            role="button"
+          >
+            Create Note
+          </a>
         </div>
 
 
@@ -88,10 +94,10 @@
           <caption align="top" class="text-center text-black">Archived Notes</caption>
           <thead>
             <tr class="bg-primary bg-opacity-25 text-center">
-              <th>Name</th>
+              <th>Title</th>
               <th>Created</th>
               <th>Category</th>
-              <th>Content</th>
+              <th>Description</th>
               <th>Dates</th>
               <th>
                 <i class="fa fa-archive ms-3"></i>
@@ -104,6 +110,49 @@
         </table>
       </div>
     </section>
+
+    <!-- Form To Add New Note -->
+    <div class="wrapper fixed-top text-bg-light" id="form">
+      <div class="container">
+        <div class="form__content">
+          <h5 class="font-monospace text-center">Add or Edit Note</h5>
+          <div class="d-flex justify-content-end">
+            <a href="#" class="form__close-btn">
+              <i class="fa fa-close"></i>
+            </a>
+          </div>
+
+          <form class="form">
+            <div class="mb-3">
+              <label for="title" class="col-form-label">
+                Title
+              </label>
+              <input id="title" name="title" type="text" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="description" class="col-form-label">
+                Description
+              </label>
+              <textarea id="description" name="description" class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="select" class="col-form-label">Choose Category</label>
+              <select id="select" name="category" class="form-select" aria-label="category">
+                <option value="Task">Task</option>
+                <option value="Random Thought">Random Thought</option>
+                <option value="Idea">Idea</option>
+              </select>
+            </div>
+
+            <div class="d-flex justify-content-end">
+              <button type="submit" class="btn btn-primary btn__submit">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
   </body>
 </html>
