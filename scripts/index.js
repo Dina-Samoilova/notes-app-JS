@@ -6,6 +6,8 @@ import { statTableFillRows } from './modules/statTableRender.js';
 import { deleteNote } from './modules/deleteNote.js';
 import { zipUnzipNote } from './modules/zipUnzipNote.js';
 import { createNote } from './modules/createNote.js';
+import { getDateFromDescription } from './modules/getDateList.js';
+import { editNote } from './modules/editNote.js';
 
 getNotes(activeTableFillRows);
 getNotes(archivedTableFillRows);
@@ -61,11 +63,10 @@ document.addEventListener('click', (event) => {
 
 // Click On Edit Button In One Of Table Active Notes Or Archived Table
   if (btnEdit) {
-    const row = item.closest('tr');
     const rowIndex = item.closest('tr').rowIndex;
-    const title = row.cells[0].textContent;
-    const description = row.cells[3].textContent;
-    const category = row.cells[2].textContent;
+    const category = item.closest('tr').cells[2].textContent;
+
+    editNote(rowIndex, category);
   }
 
 // Click On Create Note Button Uder Active Table

@@ -112,10 +112,10 @@
     </section>
 
     <!-- Form To Add New Note -->
-    <div class="wrapper fixed-top text-bg-light" id="form">
+    <div id="form" class="wrapper fixed-top text-bg-light">
       <div class="container">
         <div class="form__content">
-          <h5 class="font-monospace text-center">Add or Edit Note</h5>
+          <h5 class="font-monospace text-center fw-bold text-primary">Add Note</h5>
           <div class="d-flex justify-content-end">
             <a href="#" class="form__close-btn">
               <i class="fa fa-close"></i>
@@ -151,6 +151,47 @@
             </div>
           </form>
         </div>
+      </div>
+    </div>
+
+    <!-- Form To Edit Note -->
+    <div id="edit" class="fixed-top text-bg-light">
+      <div class="container">
+        <h5 class="font-monospace text-center fw-bold text-primary border-bottom border-danger">Edit Note</h5>
+        <div class="d-flex justify-content-end">
+          <a href="#" class="edit-form__close-btn">
+            <i class="fa fa-close"></i>
+          </a>
+        </div>
+
+        <form class="edit-form">
+          <div class="mb-3">
+            <label for="edit-title" class="col-form-label">
+              Title
+            </label>
+            <input id="edit-title" name="title" type="text" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <label for="edit-description" class="col-form-label">
+              Description
+            </label>
+            <textarea id="edit-description" name="description" class="form-control"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="edit-select" class="col-form-label">Choose Category</label>
+            <select id="edit-select" name="category" class="form-select" aria-label="category">
+              <option value="Task">Task</option>
+              <option value="Random Thought">Random Thought</option>
+              <option value="Idea">Idea</option>
+            </select>
+          </div>
+        
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-primary edit__submit">
+              Submit changes
+            </button>
+          </div>
+        </form>
       </div>
     </div>
     <noscript>You need to enable JavaScript to run this app.</noscript>

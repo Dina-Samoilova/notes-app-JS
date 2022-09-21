@@ -43,7 +43,7 @@ const createNote = () => {
         <td>
           <div class="btn-group" role="group" aria-label="Edit archived delete notes">
             <a
-              href="#form"
+              href="#edit"
               class="btn btn-light btn__edit"
               role="button"
             >

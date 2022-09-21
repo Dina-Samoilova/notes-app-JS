@@ -1,6 +1,6 @@
 'use strict';
 
-const deleteNote = (category,index, table) => {
+const deleteNote = (category, index, table) => {
   const activeTable = document.querySelector('.tabl__active');
   const archivedTable = document.querySelector('.tabl__archived');
   const statTable = document.querySelector('.tabl__stat');

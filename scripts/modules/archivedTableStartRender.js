@@ -27,13 +27,6 @@ const archivedTableFillRows = (array) => {
       <td>${getDateFromDescription(note.description)}</td>
       <td>
         <div class="btn-group" role="group" aria-label="Edit archived delete notes">
-          <a
-            href="#form"
-            class="btn btn-light btn__edit"
-            role="button"
-          >
-            <i class="fa fa-pencil" title="edit"></i>
-          </a>
           <button type="button" class="btn btn-light btn__archived">
             <i class="fa fa-archive" title="archive/activate"></i>
           </button>
