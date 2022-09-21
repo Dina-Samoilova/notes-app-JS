@@ -15,9 +15,10 @@ Add and Edit functionality use only for active note table.
 * Javascript
 
 # Usage
-1 fork repository
-2 clone to you storage
-3 ```bash
+1. fork repository
+2. clone to you storage
+3.
+ ```bash
 npm install
 ```
-4 then you could add changes or start with live-server
+4. then you could add changes or start with live-server
