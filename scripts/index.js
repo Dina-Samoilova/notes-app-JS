@@ -6,7 +6,6 @@ import { statTableFillRows } from './modules/statTableRender.js';
 import { deleteNote } from './modules/deleteNote.js';
 import { zipUnzipNote } from './modules/zipUnzipNote.js';
 import { createNote } from './modules/createNote.js';
-import { getDateFromDescription } from './modules/getDateList.js';
 import { editNote } from './modules/editNote.js';
 
 getNotes(activeTableFillRows);

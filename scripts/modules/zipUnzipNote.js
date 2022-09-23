@@ -14,6 +14,8 @@ const zipUnzipNote = (rowToMove, category, table) => {
       }
     }
 
+    rowToMove.cells[5].querySelector('a').setAttribute('hidden', '');
+
     archivedTableBody.append(rowToMove);
   }
 
@@ -23,6 +25,8 @@ const zipUnzipNote = (rowToMove, category, table) => {
         row.cells[1].textContent = +row.cells[1].textContent + 1;
       }
     }
+
+    rowToMove.cells[5].querySelector('a').removeAttribute('hidden');
 
     activeTableBody.append(rowToMove);
   }
