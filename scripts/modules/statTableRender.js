@@ -18,7 +18,7 @@ const statTableFillRows = (array) => {
       && !note.active);
 
     tr.insertAdjacentHTML('beforeend', `
-      <td>${Category[i]}</td>
+      <td class="fw-bold">${Category[i]}</td>
       <td>${activeNotes.length}</td>
       <td>${archivedNotes.length}</td>
     `);

@@ -5,13 +5,16 @@ const getDateFromDescription = (text) => {
   const textToArr = text.split(' ');
 
   for (const word of textToArr) {
-    const wordWithoutSymbols = word.replace(/[.,?!-]*/g,'');
-    const date = new Date(word);
+    const wordWithoutSymbols = word.replace(/[,?!-]*/g, '');
+    const str = Number(wordWithoutSymbols);
+    const date = new Date(wordWithoutSymbols);
 
     if (isNaN(date)) {
       continue;
     } else {
-      dateList.push(wordWithoutSymbols);
+      if (isNaN(str)) {
+        dateList.push(wordWithoutSymbols);
+      }
     }
   }
 
